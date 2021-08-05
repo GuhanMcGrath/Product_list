@@ -31,6 +31,7 @@ class _HomeState extends State<Home> {
             child: FutureBuilder(
           future: getdata(),
           builder: (context, snapshot) {
+            Provider.of<CartDetails>(context, listen: false).itemsInCart = 0;
             if (snapshot.data == null) {
               return Center(
                 child: CircularProgressIndicator(),
