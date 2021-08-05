@@ -243,7 +243,6 @@ class CartDetails extends ChangeNotifier {
         itemsInCart -= 1;
       }
     }
-    print(itemsInCart);
     notifyListeners();
   }
 }
