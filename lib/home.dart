@@ -7,8 +7,6 @@ import 'package:product_list/price.dart';
 import 'package:product_list/productdata.dart';
 import 'package:provider/provider.dart';
 
-var ldata;
-
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -17,7 +15,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   getdata() async {
     var data = await ProductData().getData();
-    ldata = data;
     return data;
   }
 
